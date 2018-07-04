@@ -1,0 +1,23 @@
+{
+  "name": "cssRn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "keywords": [],
+  "author": "kresent",
+  "license": "ISC",
+  "scripts": {
+    "test": "jest",
+    "prepublish": "yarn test"
+  },
+  "devDependencies": {
+    "babel-plugin-macros": "^2.2.2",
+    "babel-plugin-tester": "^5.4.0",
+    "jest": "^23.2.0"
+  },
+  "dependencies": {
+    "babel-literal-to-ast": "^2.0.0",
+    "css-to-react-native-transform": "^1.7.0",
+    "react-native-css-media-query-processor": "^0.21.0"
+  }
+}
