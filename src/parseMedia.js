@@ -5,6 +5,7 @@ module.exports = function(path, state, types) {
   if (!types.isCallExpression(parent)) {
     return;
   }
+  
   path.replaceWith(
     state.addImport(
       'react-native-css-media-query-processor',
@@ -12,8 +13,8 @@ module.exports = function(path, state, types) {
       'parseMedia',
     ),
   )
-  // if not provided `matchObject`, make an one
-  if (parent.node.arguments.length === 1) {
+  
+  if(parent.node.arguments.length === 1) {
     parent.node.arguments.push(serialize({}));
   }
 }
